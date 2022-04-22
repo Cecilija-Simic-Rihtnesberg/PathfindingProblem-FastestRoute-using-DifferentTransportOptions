@@ -1,14 +1,14 @@
 My own Documentation of AlgoData Project "CITY MAP"
 
-https://user-images.githubusercontent.com/90723803/164672620-b640804d-7213-433a-95af-1969ec0732fb.mov
-
-
 How can I get from home to the City center? There are two options, which way is the fastest?
+
 The first option: walk to the nearest subway station and ride three subway stations, which are connected, to the city center
+
 The second option: cycle directly from home to the city center.
+
 Home (Player or Bike) is the START and City center is the TARGET.
 
-![image](https://user-images.githubusercontent.com/90723803/164650003-8876e100-ee31-4c0f-8006-be4c8870b253.png)
+https://user-images.githubusercontent.com/90723803/164672620-b640804d-7213-433a-95af-1969ec0732fb.mov
 
 I started my project by designing a simple scene in Unity, with buildings in different sizes, three subway stations and a few trees. The plane itself is walkable (Layer: Default) but Environment obstacles are unwalkable with Layer (Unwalkable). Then I added START, Player (I) and bike. The point is to find the fastest way to the City by bike and by player to the first subway station Globen. How algorithm works. Finding the shortest path from nod A to node B in the defined grid. Grid is occupied by walkable obstacle nodes represented by squares. To find the shortest way from point A to B we need to define the distance between two nodes to one. What means that the distance to the diagonal nodes is defined by Pythagorized and it will be the square root of two which is approximately 1,4. To easier calculate and to use integers we are going to multiply those numbers by 10. The algorithm begins by going to the start node A and by looking on all surrounding nodes and calculating some values for each of them.
 
