@@ -1,4 +1,6 @@
-My own Documentation of AlgoData Project "CITY MAP"
+### My own Documentation of AlgoData Project "CITY MAP"
+
+
 
 https://user-images.githubusercontent.com/90723803/164672620-b640804d-7213-433a-95af-1969ec0732fb.mov
 
@@ -17,6 +19,7 @@ I started my project by designing a simple scene in Unity, with buildings in dif
 * And the value F cost which is the sum of the G and H cost.
 
 
+
 ![image](https://user-images.githubusercontent.com/90723803/164650646-c6a5e546-851c-4f62-b0b5-5d6b258ff37a.png)
  
 I also created the Start method where we are going to do the basic calculations. One of the calculations is how many nodes fit in the grid. To calculate I created the float "nodeDiameter" and int gridSizeX and grdSizeY. Inside of the Start method we defined the nodeDiameter us a nodeRadius times 2, the gridSizeX us a gridWorldSize.x devided by nodeDiameter and the gridSizeY us a gridWorldSize.y devided by nodeDiameter but to be sure that those are integers we used Mathf.RoundToInt to round it to closest integer.
@@ -28,8 +31,7 @@ Finding the right node takes a lot of time if I have to iterate through the whol
 
 ![image](https://user-images.githubusercontent.com/90723803/164651610-abf80d76-6413-4902-8c0c-69beae1293d4.png)
  
-Units
-For calculating the few paths at the same time I created the path request manager class. Where I am using the queue for storing all requests and spreading them to the few frames and we pass it to the pathfinding class. Then I created the unit class where I used the path request manager class. In the same class I visualized the path with the help of the Gizmo drawing.
+Units for calculating the few paths at the same time I created the path request manager class. Where I am using the queue for storing all requests and spreading them to the few frames and we pass it to the pathfinding class. Then I created the unit class where I used the path request manager class. In the same class I visualized the path with the help of the Gizmo drawing.
 
 ![image](https://user-images.githubusercontent.com/90723803/164648762-34709a1f-b162-432f-9172-9b5a95b6d64e.png)
  
